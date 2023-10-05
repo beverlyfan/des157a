@@ -11,8 +11,14 @@
     <script>
         // My program prints out every number from 1-100. However, for all numbers divisible by 3, the console prints "Fizz", and for all numbers divisible by 5, the console prints "Buzz".
 
-        for (var i=0; i<100; i++) {
-            console.log(${i});
+        for (var i=0; i<101; i++) {
+            if (i%3 == 0) {
+                console.log(`FIZZ`);
+            } else if (i%5 == 0) {
+                console.log(`BUZZ`);
+            } else {
+                console.log(`${i}`);
+            }
         }
     </script>
 </body>
