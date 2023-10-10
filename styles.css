@@ -1,11 +1,23 @@
+/* color palette:
+#FAA6FF - dark pink
+#EFC3F5 - light pink
+#2F195F - dark purple
+#7353BA - light purple
+#0F1020 - black */
+
 body {
     width: 1200px;
-    background: rgb(236,195,238);
-    background: radial-gradient(circle, rgba(236,195,238,1) 0%, rgba(186,186,242,1) 100%);
+    background: rgb(239,195,245);
+    background: radial-gradient(circle, rgba(239,195,245,1) 0%, rgba(173,148,227,1) 100%);
+    margin: auto;
 }
 
 header p {
     font-family: 'Hind Vadodara', sans-serif;
+}
+
+ul {
+    padding-left: 0;
 }
 
 li {
@@ -21,25 +33,76 @@ header h1 {
     font-family: 'Paytone One', sans-serif;
     font-size: 4em;
     text-transform: uppercase;
+    mix-blend-mode: overlay
 }
 
 header p {
     text-align: right;
+    mix-blend-mode: overlay
 }
 
 #container {
     display: flex;
+    justify-content: center;
 }
 
-main #studiosAndExperiments {
-    border: 2px solid black;
-    background-color: 
+#container h2 {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 35px;
+    background-color: white;
+    color: #0F1020;
+    border: 2px solid #FAF9F6;
 }
 
-main #rAndD {
-    border: 2px solid black;
+#container li {
+    background-color: #2F195F;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-main #final {
-    border 2px solid black;
+#container li:hover {
+    background-color:#7353BA;
+}
+
+#container a {
+    color:#FAF9F6;
+    text-decoration: none;
+}
+
+#studiosAndExperiments {
+    margin-right: 50px;
+}
+
+#rAndD {
+    margin-right: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    margin: 40px;
+    font-size: 15px;
+    color: #0F1020;
+}
+
+footer a {
+    color: #0F1020;
+}
+
+footer address {
+    font-size: 14px;
+}
+
+footer address a:hover {
+    color: #FAF9F6;
 }
