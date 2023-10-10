@@ -1,5 +1,11 @@
 body {
-    min-width: 1200px;
+    width: 1200px;
+    background: rgb(236,195,238);
+    background: radial-gradient(circle, rgba(236,195,238,1) 0%, rgba(186,186,242,1) 100%);
+}
+
+header p {
+    font-family: 'Hind Vadodara', sans-serif;
 }
 
 li {
@@ -21,10 +27,19 @@ header p {
     text-align: right;
 }
 
-.container {
+#container {
     display: flex;
 }
 
-.studiosAndExperiments {
-    border: 1px solid black;
+main #studiosAndExperiments {
+    border: 2px solid black;
+    background-color: 
+}
+
+main #rAndD {
+    border: 2px solid black;
+}
+
+main #final {
+    border 2px solid black;
 }
