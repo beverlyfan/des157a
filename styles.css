@@ -48,18 +48,27 @@ header p {
 
 #container h2 {
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 35px;
-    background-color: white;
-    color: #0F1020;
+    background: rgb(239,195,245);
+    background: radial-gradient(circle, rgba(239,195,245,1) 0%, rgba(173,148,227,1) 100%);
     border: 2px solid #FAF9F6;
+    color: #0F1020;
+    mix-blend-mode: overlay
+}
+
+#container h2, #container a {
+    font-family: 'Gabarito', sans-serif;
 }
 
 #container li {
     background-color: #2F195F;
+    border: 1px solid #FAF9F6;
     text-align: center;
     font-size: 15px;
     padding: 10px;
