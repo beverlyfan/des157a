@@ -25,20 +25,34 @@ li {
 }
 
 header {
-    margin-left: 100px;
-    margin-right: 100px;
+    background-image: url(images/banner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    aspect-ratio: 1100 / 250;
+    margin-top: auto;
 }
 
 header h1 {
     font-family: 'Paytone One', sans-serif;
     font-size: 4em;
     text-transform: uppercase;
-    mix-blend-mode: overlay
+    text-align: center;
+    color: #FAF9F6;
+    margin: 0;
+    padding-top: 75px;
+    transition: color 1s ease-in;
+}
+
+header h1:hover {
+    color: #EFC3F5;
+    transform: rotateX(2165deg);
+    transition: all 5s ease-out;
 }
 
 header p {
-    text-align: right;
-    mix-blend-mode: overlay
+    text-align: center;
+    color: #FAF9F6;
 }
 
 #container {
