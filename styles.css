@@ -10,6 +10,15 @@ body {
     background: rgb(239,195,245);
     background: radial-gradient(circle, rgba(239,195,245,1) 0%, rgba(173,148,227,1) 100%);
     margin: auto;
+    animation-name: bgcolorchange;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bgcolorchange {
+    0% {background: radial-gradient(circle, rgba(239,195,245,1) 0%, rgba(173,148,227,1) 100%);}
+    100% {background: radial-gradient(circle, rgba(173,148,227,1) 0%, rgba(239,195,245,1) 100%);}
 }
 
 header p {
@@ -42,6 +51,7 @@ header h1 {
     margin: 0;
     padding-top: 75px;
     transition: color 1s ease-in;
+    cursor: pointer;
 }
 
 header h1:hover {
