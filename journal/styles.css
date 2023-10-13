@@ -1,0 +1,86 @@
+/* RESETS */
+
+p, h2 { margin: 0; }
+
+/* STYLING */
+
+header {
+    font-family: 'Shrikhand', cursive;
+    color: #4A4E69;
+    text-align: center;
+    background-color: white;
+    padding: 2px;
+    border: 2px solid #C9ADA7;
+    border-radius: 30px;
+    margin: 30px;
+}
+
+body {
+    background: #F2E9E4;
+}
+
+article {
+    background-color: white;
+    padding: 25px;
+    margin-top: 50px;
+    border: 2px solid #C9ADA7;
+    border-radius: 30px;
+    margin: 30px; 
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4A4E69;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+time {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic; 
+    font-size: 14px;
+    color: #22223B;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    padding-top: 1em;
+}
+
+p a {
+    color: #9A8C98;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+footer address {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer address a {
+    color: #4A4E69;
+}
+
+/* MEDIA QUERY */
+@media only screen and (min-width: 600px) {
+    header {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        max-width:1000px;
+    }
+
+    article {
+        margin: auto;
+        max-width: 800px;
+        padding: 50px;
+        margin-bottom: 20px;
+    }
+	
+}
