@@ -4,86 +4,90 @@ p, h2 { margin: 0; }
 
 /* STYLING */
 
+body {
+    background-color: #D0CEBA;
+}
+
 header {
-    font-family: 'Shrikhand', cursive;
-    color: #4A4E69;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-transform: uppercase;
+    color: #417B5A;
+    font-size: 2em;
     text-align: center;
     background-color: white;
     padding: 2px;
-    border: 2px solid #C9ADA7;
-    border-radius: 30px;
-    margin: 30px;
+    border: 2px solid #1F2041;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
-body {
-    background: #F2E9E4;
+header h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #articles {
     display: flex;
     justify-content: center;
+    font-family: 'Cairo', sans-serif;
 }
 
 article {
     background-color: white;
-    padding: 25px;
-    margin-top: 50px;
-    border: 2px solid #C9ADA7;
+    border: 2px solid #1F2041;
     border-radius: 30px;
+    margin-top: 50px;
+    margin: 30px;
+    max-width: 480px;
+    padding: 60px;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #4A4E69;
+article h2 {
+    color: #417B5A;
+    font-size: 25px;
     text-align: center;
     padding-bottom: 8px;
 }
 
-time {
+article time {
     display: block;
-    font-family: 'Montserrat', sans-serif;
     font-style: italic; 
     font-size: 14px;
     color: #22223B;
     text-align: center;
 }
 
-p {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5em;
+article p {
+    line-height: 2em;
     padding-top: 1em;
+    color: #1F2041;
 }
 
-p a {
-    color: #9A8C98;
+article p a {
+    color: #417B5A;
+}
+
+article p a:hover {
+    color: #4B3F72;
 }
 
 footer {
+    color: #417B5A;
     text-align: center;
     padding-bottom: 30px;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.75em;
 }
 
-footer address {
-    font-family: 'Montserrat', sans-serif;
+footer a {
+    color: #4B3F72;
 }
 
-footer address a {
-    color: #4A4E69;
-}
-
-/* MEDIA QUERY */
-@media only screen and (min-width: 600px) {
-    header {
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        max-width:1000px;
-    }
-
-    article {
-        margin: 30px;
-        max-width: 500px;
-        padding: 50px;
-    }
-	
+footer a:hover {
+    color: #1F2041;
 }
