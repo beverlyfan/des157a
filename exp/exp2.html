@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>JS Experimentation — Functions & DOM</h1>
+
+    <script>
+        /* My experiment prompts the user to try to guess what color the computer is thinking of. When guessed correctly, the computer displays "Congratulations, you guessed correctly!" and changes the background color to that color. Otherwise, the computer displays "Try again!" */
+
+        var colors = ["red", "blue", "yellow"];
+
+        function generateColor() {
+            var randomColor = Math.floor(Math.random()*colors.length);
+            return colors[randomColor];
+        }
+
+        var userGuess = prompt("Please guess what color I am thinking of: red, blue, or yellow?", "");
+        var computerColor = generateColor();
+
+        if (userGuess == computerColor) {
+            alert(`Congratulations, you guessed correctly!`);
+            document.body.style.backgroundColor = computerColor;
+        } else {
+            alert(`Try again!`);
+        }
+    </script>
+</body>
+</html>
