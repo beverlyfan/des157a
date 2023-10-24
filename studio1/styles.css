@@ -1,6 +1,9 @@
 body {
-    background-color: #c7a98e;
-    border: 30px solid #a4785f;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1200 / 750;
+    margin-top: auto;
 }
 
 main {

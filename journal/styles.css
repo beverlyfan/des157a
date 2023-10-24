@@ -39,6 +39,7 @@ header h1 {
 
 #articles {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-family: 'Cairo', sans-serif;
 }
@@ -80,6 +81,18 @@ article p a {
 
 article p a:hover {
     color: #4B3F72;
+}
+
+#post1 {
+    width: 50%;
+}
+
+#post2 {
+    width: 50%;
+}
+
+#post3 {
+    width: 50%;
 }
 
 footer {
