@@ -52,9 +52,14 @@ input[type=radio] {
     cursor: pointer;
 }
 
-main section {
+main fieldset {
     padding-top: 10px;
     padding-bottom: 10px;
+    border: none;
+}
+
+main fieldset legend {
+    padding-top: 10px;
 }
 
 input[type=submit] {
@@ -70,11 +75,6 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #a10100;
-}
-
-main legend {
-    margin: auto;
-    line-height: 2em;
 }
 
 /* .hidden {
