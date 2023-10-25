@@ -14,36 +14,39 @@
     <script src="script.js" defer></script> 
 </head>
 <body>
-    <main id="overlay" class="hidden">
+    <img src="images/pin.png" alt="pushpin" height="506" width="490">
+    <main>
         <h1>Breaking News!</h1>
-        <form>
-            <label for="time">Time: </label><input type="text" id="time" placeholder="ex: 10:00AM" required><br>
-            <label for="building">Building on UC Davis campus: </label><input type="text" id="building" placeholder="ex: SCC" required><br>
-            <label for="name">A name: </label><input type="text" id="name" placeholder="ex: Jane" required><br>
-            <label for="adj">Adjective: </label><input type="text" id="adj" placeholder="ex: slimy" required><br>
-            <label for="animal">Animal: </label><input type="text" id="animal" placeholder="ex: bear" required><br>
-            <label for="year">Year between 1917-2022: </label><input type="text" id="year" placeholder="ex: 2019" required><br>
-            <label for="adj2">Adjective: </label><input type="text" id="adj2" placeholder="ex: lonely" required><br>
-            <label for="animal2">Animal: </label><input type="text" id="animal2" placeholder="ex: goat" required><br>
-            <label for="scent">Scent: </label><input type="text" id="scent" placeholder="ex: pumpkin spice" required><br>
-            <label for="noun">Singular noun: </label><input type="text" id="noun" placeholder="ex: clock" required><br>
-            <label for="adverb">Adverb: </label><input type="text" id="adverb" placeholder="ex: excitedly" required><br>
+        <section id="overlay" class="hidden">
+            <form>
+                <label for="time">Time: </label><input type="text" id="time" placeholder="ex: 10:00AM" required><br>
+                <label for="building">Building on UC Davis campus: </label><input type="text" id="building" placeholder="ex: SCC" required><br>
+                <label for="name">A name: </label><input type="text" id="name" placeholder="ex: Jane" required><br>
+                <label for="adj">Adjective: </label><input type="text" id="adj" placeholder="ex: slimy" required><br>
+                <label for="animal">Animal: </label><input type="text" id="animal" placeholder="ex: bear" required><br>
+                <label for="year">Year between 1917-2022: </label><input type="text" id="year" placeholder="ex: 2019" required><br>
+                <label for="adj2">Adjective: </label><input type="text" id="adj2" placeholder="ex: lonely" required><br>
+                <label for="animal2">Animal: </label><input type="text" id="animal2" placeholder="ex: goat" required><br>
+                <label for="scent">Scent: </label><input type="text" id="scent" placeholder="ex: pumpkin spice" required><br>
+                <label for="noun">Singular noun: </label><input type="text" id="noun" placeholder="ex: clock" required><br>
+                <label for="adverb">Adverb: </label><input type="text" id="adverb" placeholder="ex: excitedly" required><br>
 
-            <section>
-            <legend>Select one of the following:</legend>
-            <input type="radio" id="arc" name="place">
-            <label for="arc">Activities & Recreation Center</label><br>
-            <input type="radio" id="library" name="place">
-            <label for="library">Shields Library</label><br>
-            <input type="radio" id="coho" name="place">
-            <label for="coho">ASUCD Coffee House</label><br>
-            </section>
+                <section>
+                <legend>Select one of the following:</legend>
+                <input type="radio" id="arc" name="place">
+                <label for="arc">Activities & Recreation Center</label><br>
+                <input type="radio" id="library" name="place">
+                <label for="library">Shields Library</label><br>
+                <input type="radio" id="coho" name="place">
+                <label for="coho">ASUCD Coffee House</label><br>
+                </section>
 
-            <label for="food">Food: </label><input type="text" id="food" placeholder="ex: pad thai" required><br>
-            <label for="utensil">Singular utensil: </label><input type="text" id="utensil" placeholder="ex: chopstick" required><br>
+                <label for="food">Food: </label><input type="text" id="food" placeholder="ex: pad thai" required><br>
+                <label for="utensil">Singular utensil: </label><input type="text" id="utensil" placeholder="ex: chopstick" required><br>
 
-            <input type="submit" id="send-form" value="Read the news!">
-        </form>
+                <input type="submit" id="send-form" value="Read the news!">
+            </form>
+        </section>
     </main>
 </body>
 </html>
