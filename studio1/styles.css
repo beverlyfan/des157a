@@ -6,11 +6,24 @@ body {
 
 body img {
     position: absolute;
+}
+
+#pin {
     left: 750px;
     top: 100px;
     z-index: 1;
     height: auto;
     max-width: 3%;
+}
+
+#ghost {
+    left: 1200px;
+    top: 500px;
+}
+
+#pumpkin {
+    left: 200px;
+    top: 250px;
 }
 
 main {
