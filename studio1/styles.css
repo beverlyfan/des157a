@@ -61,20 +61,6 @@ input[type=text] {
     box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
 }
 
-input[type=radio] {
-    cursor: pointer;
-}
-
-main fieldset {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-}
-
-main fieldset legend {
-    padding-top: 10px;
-}
-
 input[type=submit] {
     background-color: #de3113;
     color: #fff;
@@ -90,7 +76,28 @@ input[type=submit]:hover {
     background-color: #a10100;
 }
 
-/* .hidden {
+/* #overlay {
+    position: absolute;
+    background-color: #fbfbfb;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 200px;
+}
+
+#overlay section {
+    box-sizing: border-box;
+    background-color: #fbfbfb;
+    padding: 20px;
+    width: 700px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.hidden {
     display: none;
 }
 
