@@ -19,7 +19,7 @@
         const scent = document.querySelector('#scent').value;
         const noun = document.querySelector('#noun').value;
         const adverb = document.querySelector('#adverb').value;
-        const location = document.querySelector('#restaurant').value;
+        const restaurant = document.querySelector('#restaurant').value;
         const food = document.querySelector('#food').value;
         const utensil = document.querySelector('#utensil').value;
         
@@ -68,7 +68,7 @@
             myText = "Please provide a utensil!";
             document.querySelector('#utensil').focus();
         } else {
-            myText = `Breaking news! At ${time} of Halloween, a strange discovery was uncovered behind the closed doors of ${building}. ${name}, the previously deceased ${adj} ${animal} that was known as the campus class pet in ${year}, was found resurrected! However, not without some ${adj2}. It now has the head of a ${animal2}, smells like ${scent}, and sounds like a broken ${noun}. Beware! It has commonly been spotted ${adverb} making its way toward ${restaurant} in search of some ${food}. Remeber to bring a protective ${utensil} withyou for safety as you traverse around campus, or you might find yourself its next meal!`;
+            myText = `Breaking news! At ${time} of Halloween, a strange discovery was uncovered behind the closed doors of ${building}. ${name}, the previously deceased ${adj} ${animal} that was known as the campus class pet in ${year}, was found resurrected! However, not without some ${adj2} changes. It now has the head of a ${animal2}, smells like ${scent}, and sounds like a broken ${noun}. Beware! It has commonly been spotted ${adverb} making its way toward ${restaurant} in search of some ${food}. Remeber to bring a protective ${utensil} with you for safety as you traverse around campus, or you might find yourself its next meal!`;
             document.querySelector('#time').value = '';
             document.querySelector('#building').value = '';
             document.querySelector('#name').value = '';
