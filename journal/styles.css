@@ -83,6 +83,17 @@ article p a:hover {
     color: #4B3F72;
 }
 
+article img {
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+article figcaption {
+    font-size: 12px;
+    text-align: center;
+}
+
 #post1 {
     width: 50%;
 }
