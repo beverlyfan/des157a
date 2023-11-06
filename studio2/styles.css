@@ -14,11 +14,47 @@ body {
     background-color: #384628;
 }
 
+h1 {
+    font-family: 'Concert One', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #684077;
+    margin: 0;
+}
+
+#back1 h1 {
+    margin: 20px;
+}
+
+p {
+    font-family: 'Concert One', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    color: #6f5c51;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#back1 img:hover {
+    -webkit-box-shadow: 0 0 20px 5.5px #8e9881;
+    -moz-box-shadow: 0 0 20px 5.5px #8e9881;
+    box-shadow: 0 0 20px 5.5px #8e9881;
+}
+
 .notebook {
     position: relative;
     width: 350px;
     height: 500px;
     transition: transform 0.5s;
+    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.54);
 }
 
 .paper {
@@ -32,7 +68,7 @@ body {
 }
 
 .front, .back {
-    background-color: white;
+    background-color: #e2dcd6;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -40,12 +76,13 @@ body {
     left: 0;
     transform-origin: left;
     transition: transform 0.5s;
+    border-radius: 0 20px 20px 0;
 }
 
 .front {
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid #384628;
+    border-left: 3px solid #684077;
 }
 
 .back {
@@ -55,14 +92,15 @@ body {
 .front-content, .back-content {
     width: 100%;
     height: 100%;
-    display: flex;
+    text-align: center;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
-.back-content {
-    transform: rotateY(180deg)
-}
+/* .back-content {
+    transform: rotateY(180deg);
+} */
 
 .flipped .front, .flipped .back {
     transform: rotateY(-180deg);
@@ -85,6 +123,14 @@ i {
     color: white;
 }
 
+#front1 {
+    border-left: 40px solid #684077;
+}
+
+#front1 h1 {
+    padding-top: 100px;
+}
+
 #page1 {
     z-index: 3;
 }
@@ -95,4 +141,19 @@ i {
 
 #page3 {
     z-index: 1;
+}
+
+#overlay {
+    position: absolute;
+    background-color: #fbfbfb;
+    top: 100px;
+    left: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block
 }
