@@ -16,14 +16,21 @@
     prevBtn.addEventListener('click', goPrevPage);
     nextBtn.addEventListener('click', goNextPage);
 
-    function openBook(){
-        notebook.style.transform = 'translateX(50%)';
-        prevBtn.style.transform = 'translateX(-180px)';
-        nextBtn.style.transform = 'translateX(180px)';
+    function openBook() {
+        notebook.style.transform = "translateX(50%)";
+        prevBtn.style.transform = "translateX(-180px)";
+        nextBtn.style.transform = "translateX(180px)";
     }
+    
+    function closeBook(atBeginning) {
+        if (atBeginning) {
+            notebook.style.transform = 'translateX(0%)';
+        } else {
+            notebook.style.transform = 'translateX(100%)';
+        }
 
-    function closeBook(){
-
+        prevBtn.style.transform = "translateX(0px)";
+        nextBtn.style.transform = "translateX(0px)";
     }
 
     function goNextPage(){
@@ -41,7 +48,7 @@
                 case 3:
                     page3.classList.add('flipped');
                     page3.style.zIndex = 3;
-                    closeBook();
+                    closeBook(false);
                     break;
             }
             currentPage ++;
@@ -49,7 +56,25 @@
     }
 
     function goPrevPage(){
-
+        if (currentPage > 1) {
+            switch(currentPage) {
+                case 2:
+                    closeBook(true);
+                    page1.classList.remove('flipped');
+                    page1.style.zIndex = 3;
+                    break;
+                case 3:
+                    page2.classList.remove('flipped');
+                    page2.style.zIndex = 2;
+                    break;
+                case 4:
+                    openBook();
+                    page3.classList.remove('flipped');
+                    page3.style.zIndex = 1;
+                    break;
+            }
+            currentPage --;
+        }
     }
 
 })();
