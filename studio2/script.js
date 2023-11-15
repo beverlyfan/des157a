@@ -1,5 +1,5 @@
 (function(){
-    'use strict'
+    'use strict';
     console.log("reading js");
 
     const prevBtn = document.querySelector('#previous');

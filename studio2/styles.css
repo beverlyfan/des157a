@@ -34,12 +34,21 @@ p {
     color: #6f5c51;
 }
 
+#info {
+    font-size: 15px;
+    font-style: italic;
+    color: #384628;
+    padding: 10px;
+    
+}
+
 img {
     width: 60%;
-    height:60%;
+    height: 60%;
     display: block;
     margin: auto;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #front3 img {
@@ -48,7 +57,49 @@ img {
 }
 
 dialog {
-    border-radius: 10px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #e2dcd6;
+}
+
+dialog::backdrop {
+    background-color: rgb(0, 0, 0, 0.4);
+   }
+
+dialog img {
+    cursor: pointer;
+}
+
+dialog h2 {
+    font-family: 'Concert One', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #684077;
+    text-align: center;
+    padding: 20px;
+}
+
+dialog p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+dialog button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 20px;
+    transition: transform 0.5s;
+}
+
+dialog button:hover i {
+    color: #6f5c51;
+}
+
+dialog button i {
+    font-size: 30px;
+    color: black;
 }
 
 .notebook {
