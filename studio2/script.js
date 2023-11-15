@@ -52,15 +52,15 @@
                 case 1:
                     openBook();
                     page1.classList.add('flipped');
-                    page1.style.zIndex = 1;
+                    page1.style.zIndex = 0;
                     break;
                 case 2:
                     page2.classList.add('flipped');
-                    page2.style.zIndex = 2;
+                    page2.style.zIndex = 1;
                     break;
                 case 3:
                     page3.classList.add('flipped');
-                    page3.style.zIndex = 3;
+                    page3.style.zIndex = 2;
                     closeBook(false);
                     break;
             }
