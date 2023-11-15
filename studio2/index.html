@@ -15,12 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- PREV BUTTON -->
     <button id="previous">
         <i class="fa-solid fa-chevron-left"></i>
     </button>
 
+    <!--     -->
     <div id="notebook" class="notebook">
-        <!-- Page 1 -->
+        <!-- PAGE 1 -->
         <div id="page1" class="paper">
             <div class="front">
                 <div id="front1" class="front-content">
@@ -32,43 +34,91 @@
             <div class="back">
                 <div id="back1" class="back-content">
                     <h1>Arches National Park</h1>
-                    <p><img src="images/arches.png" alt="arches" width="266px" height="265px"></p>
-                    <section class="overlay"></section>
+                    <p><img src="images/arches.png" alt="arches" width="266px" height="265px" id="arches"></p>
                 </div>
             </div>
         </div>
 
+        <!-- PAGE 2 -->
         <div id="page2" class="paper">
             <div class="front">
                 <div id="front2" class="front-content">
                     <h1>Grand Canyon National Park</h1>
-                    <p><img src="images/grandcanyonbookstore.png" alt="grandcanyonbookstore" width="410px" height="400px"></p>
+                    <p><img src="images/grandcanyonbookstore.png" alt="grandcanyonbookstore" width="410px" height="400px" id="grandcanyon"></p>
                 </div>
             </div>
             <div class="back">
                 <div id="back2" class="back-content">
                     <h1>Denali National Park</h1>
-                    <p><img src="images/denalikennels.png" alt="denalikennels" width="349px" height="354px"></p>
+                    <p><img src="images/denalikennels.png" alt="denalikennels" width="349px" height="354px" id="denali"></p>
                 </div>
             </div>
         </div>
 
+        <!-- PAGE 3 -->
         <div id="page3" class="paper">
             <div class="front">
                 <div id="front3" class="front-content">
                     <h1>Yellowstone National Park</h1>
-                    <p><img src="images/yellowstone.png" alt="yellowstone" width="468px" height="300px"></p>
+                    <p><img src="images/yellowstone.png" alt="yellowstone" width="468px" height="300px" id="yellowstone"></p>
                 </div>
             </div>
             <div class="back">
                 <div id="back3" class="back-content">
                     <h1>Dixie National Forest</h1>
-                    <p><img src="images/dixie.png" alt="dixie" width="248px" height="177px"></p>
+                    <p><img src="images/dixie.png" alt="dixie" width="248px" height="177px" id="dixie"></p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- POPUP DIALOG BOXES -->    
+    <dialog id="archespopup" class="popup">
+        <button id="close1">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Arches National Park</h2>
+        <img src="images/arches.png" alt="arches" width="266px" height="265px">
+        <p>I visited Arches during the summer of 2016! It was a short hike Delicate Arch, which is the famed natural feature pictured in the background of the stamp. Some cool animals I spotted include mule deer, coyotes, desert cottontails, and jackrabbits!</p>
+    </dialog>
+
+    <dialog id="grandcanyonpopup" class="popup">
+        <button id="close2">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Grand Canyon National Park</h2>
+        <img src="images/grandcanyonbookstore.png" alt="grandcanyonbookstore" width="410px" height="400px">
+        <p>I visited Grand Canyon during the summer of 2016, and have visited this park about three times in total. I went camping here for the first time with my family, and got to see many viewpoints as well as animals.</p>
+    </dialog>
+
+    <dialog id="denalipopup" class="popup">
+        <button id="close3">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Denali National Park</h2>
+        <img src="images/denalikennels.png" alt="denalikennels" width="349px" height="354px">
+        <p>Denali National Park, which features the tallest mountain in North America Mount Denali, was the most recent National Park I visited this past summer. It is located in Alaska, and I got to see many cool animals such as caribou, brown bears, and moose. I also took a boat tour and got to see orcas, a humpback whale, bald eagles, seals, and sea lions! As pictured in the stamp, I was also able to visit the sled dogs that are well known for their role in the Iditarod.</p>
+    </dialog>
+
+    <dialog id="yellowstonepopup" class="popup">
+        <button id="close4">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Yellowstone National Park</h2>
+        <img src="images/yellowstone.png" alt="yellowstone" width="468px" height="300px">
+        <p>I visited Yellowstone National Park during the summer of 2017. The most memorable features here were the geysers, such as Old Faithful pictured in the stamp. I was able to see many animals such as elk, moose, bears, mountain goats and of course, bison!</p>
+    </dialog>
+
+    <dialog id="dixiepopup" class="popup">
+        <button id="close5">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Dixie National Forest</h2>
+        <img src="images/dixie.png" alt="dixie" width="248px" height="177px">
+        <p>I passed through Dixie National Forest during the summer of 2014, between the drive from Bryce Canyon National Park and Zion National Park. I went again in the summer of 2016, on the way to Arches and Grand Canyon National Park. This was one of the first memorable hikes I remember because of the red rock canyons.</p>
+    </dialog>
+
+    <!-- NEXT BUTTON -->
     <button id="next">
         <i class="fa-solid fa-chevron-right"></i>
     </button>
