@@ -1,10 +1,3 @@
-/* COLOR PALETTE
-#1F2041 - dark blue
-#4B3F72 - purple
-#417B5A - green
-#D0CEBA - tan
-#E9D2C0 - light tan */
-
 /* RESETS */
 
 p, h2 { margin: 0; }
@@ -12,7 +5,7 @@ p, h2 { margin: 0; }
 /* STYLING */
 
 body {
-    background-color: #D0CEBA;
+    background-color: #dedbd2;
 }
 
 header {
@@ -23,7 +16,7 @@ header {
     text-align: center;
     background-color: white;
     padding: 2px;
-    border: 2px solid #1F2041;
+    border: 2px solid #4a5759;
     border-radius: 50px;
     margin: auto;
     margin-top: 50px;
@@ -35,6 +28,7 @@ header {
 header h1 {
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #edafb8;
 }
 
 #articles {
@@ -46,7 +40,7 @@ header h1 {
 
 article {
     background-color: white;
-    border: 2px solid #1F2041;
+    border: 2px solid #4a5759;
     border-radius: 30px;
     margin-top: 50px;
     margin: 30px;
@@ -55,23 +49,14 @@ article {
 }
 
 article h2 {
-    color: #417B5A;
+    color: #edafb8;
     font-size: 25px;
     text-align: center;
     padding-bottom: 8px;
 }
 
-article time {
-    display: block;
-    font-style: italic; 
-    font-size: 14px;
-    color: #22223B;
-    text-align: center;
-}
-
 article p {
     line-height: 2em;
-    padding-top: 1em;
     color: #1F2041;
 }
 
@@ -94,16 +79,9 @@ article figcaption {
     text-align: center;
 }
 
-#post1 {
-    width: 50%;
-}
-
-#post2 {
-    width: 50%;
-}
-
-#post3 {
-    width: 50%;
+h3 {
+    padding-top: 1.5em;
+    color: #4a5759;
 }
 
 footer {
