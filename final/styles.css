@@ -1,0 +1,124 @@
+/* COLOR PALETTE
+#1F2041 - dark blue
+#4B3F72 - purple
+#417B5A - green
+#D0CEBA - tan
+#E9D2C0 - light tan */
+
+/* RESETS */
+
+p, h2 { margin: 0; }
+
+/* STYLING */
+
+body {
+    background-color: #D0CEBA;
+}
+
+header {
+    font-family: 'Pixelify Sans', sans-serif;
+    text-transform: uppercase;
+    color: #417B5A;
+    font-size: 2em;
+    text-align: center;
+    background-color: white;
+    padding: 2px;
+    border: 2px solid #1F2041;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+header h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Cairo', sans-serif;
+}
+
+article {
+    background-color: white;
+    border: 2px solid #1F2041;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin: 30px;
+    max-width: 480px;
+    padding: 60px;
+}
+
+article h2 {
+    color: #417B5A;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+article time {
+    display: block;
+    font-style: italic; 
+    font-size: 14px;
+    color: #22223B;
+    text-align: center;
+}
+
+article p {
+    line-height: 2em;
+    padding-top: 1em;
+    color: #1F2041;
+}
+
+article p a {
+    color: #417B5A;
+}
+
+article p a:hover {
+    color: #4B3F72;
+}
+
+article img {
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+article figcaption {
+    font-size: 12px;
+    text-align: center;
+}
+
+#post1 {
+    width: 50%;
+}
+
+#post2 {
+    width: 50%;
+}
+
+#post3 {
+    width: 50%;
+}
+
+footer {
+    color: #417B5A;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.75em;
+}
+
+footer a {
+    color: #4B3F72;
+}
+
+footer a:hover {
+    color: #1F2041;
+}
