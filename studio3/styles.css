@@ -98,6 +98,11 @@ p {
 #score p {
     font-family: 'Cairo', sans-serif;
     text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#score h2 {
+    color: #ba6a68;
 }
 
 #startgame:hover, #roll:hover, #rollagain:hover, #pass:hover {

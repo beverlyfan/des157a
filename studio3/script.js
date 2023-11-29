@@ -73,7 +73,7 @@
 
         if (gameData.rollSum === 2){
             //console.log("snake eyes!");
-            game.innerHTML = '<p>Oh snap! Snake Eyes!</p>';
+            game.innerHTML = '<p>Sorry, you have rolled snake eyes!</p>';
             gameData.score[gameData.index] = 0;
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             showCurrentScore();
@@ -113,7 +113,7 @@
     }
 
     function showCurrentScore(){
-        score.innerHTML = `<p>Score for ${gameData.players[0]}: ${gameData.score[0]}<br>Score for ${gameData.players[1]}: ${gameData.score[1]}`;
+        score.innerHTML = `<p><strong>Score for ${gameData.players[0]}: ${gameData.score[0]}</strong><br><strong>Score for ${gameData.players[1]}: ${gameData.score[1]}</strong>`;
     }
 
 })();
