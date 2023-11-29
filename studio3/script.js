@@ -46,7 +46,7 @@
         console.log(gameData.index);
 
         gameControl.innerHTML = '<h2>The game has started</h2>';
-        gameControl.innerHTML += '<button id="quit">Wanna quit?</button>';
+        gameControl.innerHTML += '<button id="quit">Quit the game</button>';
         document.getElementById('quit').addEventListener('click', function(){
             location.reload();
         });
@@ -113,7 +113,7 @@
     }
 
     function showCurrentScore(){
-        score.innerHTML = `<p>The score for ${gameData.players[0]} is currently <strong>${gameData.score[0]}</strong> and the score for ${gameData.players[1]} is currently <strong>${gameData.score[1]}</strong></p>`;
+        score.innerHTML = `<p>Score for ${gameData.players[0]}: ${gameData.score[0]}<br>Score for ${gameData.players[1]}: ${gameData.score[1]}`;
     }
 
 })();

@@ -45,6 +45,11 @@ h1 {
     font-size: 4em;
 }
 
+h2 {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
 p {
     font-family: 'Cairo', sans-serif;
     text-align: center;
@@ -52,10 +57,59 @@ p {
     margin-right: 50px;
 }
 
+#howto p {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 10px;
+}
+
 #gamecontrol, #game, #actions, #score {
     text-align: center;
     margin: auto;
-    margin-top: 50px;
+}
+
+#gamecontrol {
+    margin-top: 30px;
+}
+
+#quit {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #90a5c6;
+}
+
+#startgame, #roll, #rollagain, #pass {
+    background-color: #ba6a68;
+}
+
+#roll, #rollagain, #pass {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#rollagain {
+    margin-right: 10px;
+}
+
+#pass {
+    margin-left: 10px;
+}
+
+#score p {
+    font-family: 'Cairo', sans-serif;
+    text-transform: uppercase;
+}
+
+#startgame:hover, #roll:hover, #rollagain:hover, #pass:hover {
+    background-color: #974b49;
+}
+
+#quit:hover {
+    background-color: #6981a7;
+}
+
+#game p {
+    margin-top: 20px;
 }
 
 button {
@@ -64,4 +118,9 @@ button {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
