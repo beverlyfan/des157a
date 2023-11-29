@@ -8,6 +8,12 @@
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
 
+    const rollBtn = document.getElementById('roll');
+    const rollAgainBtn = document.getElementById('rollagain');
+    
+    const boingSound = new Audio('sounds/boing.mp3');
+    const victorySound = new Audio('sounds/victory.mp3');
+
     const gameData = {
         dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 'images/4die.png', 'images/5die.png', 'images/6die.png'],
         players: ['player 1', 'player 2'],
@@ -18,6 +24,14 @@
         index: 0,
         gameEnd: 29
     };
+
+    /* rollBtn.addEventListener('mousedown', function(){
+        boingSound.play();
+    });
+
+    rollAgainBtn.addEventListener('mousedown', function(){
+        boingSound.play();
+    }); */
 
    /*  //This gets the current player: 
     gameData.players[gameData.index]
@@ -59,6 +73,7 @@
         actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
         document.getElementById('roll').addEventListener('click', function(){
             throwDice();
+            boingSound.play();
         });
     }
 
@@ -106,6 +121,7 @@
             score.innerHTML = `<h2>${gameData.players[gameData.index]} wins the game with ${gameData.score[gameData.index]} points!</h2>`;
             actionArea.innerHTML = '';
             document.getElementById('quit').innerHTML = "Start a new game?";
+            victorySound.play();
         } else {
             //show current score
             showCurrentScore(); 
