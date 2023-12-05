@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+    background-color: #384628;
+}
+
+h1 {
+    font-family: 'Concert One', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #684077;
+    margin: 20px;
+    padding-top: 15px;
+}
+
+#front1 h1 {
+    margin: 0;
+}
+
+p {
+    font-family: 'Concert One', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #6f5c51;
+}
+
+#info {
+    font-size: 15px;
+    font-style: italic;
+    color: #384628;
+    padding: 10px;
+    
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: auto;
+}
+
+#cover:hover {
+    animation: none;
+}
+
+p img:hover {
+    animation: wiggle 2s ease infinite;
+  }
+ 
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0);
+    }
+    15% {
+      transform: rotate(-15deg);
+    }
+    20% {
+      transform: rotate(10deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    30% {
+      transform: rotate(6deg);
+    }
+    35% {
+      transform: rotate(-4deg);
+    }
+    40%{
+      transform: rotate(0);
+    }
+  }
+
+#front3 img {
+    width: 80%;
+    height: 80%;
+}
+
+dialog {
+    border-radius: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #e2dcd6;
+}
+
+dialog::backdrop {
+    background-color: rgb(0, 0, 0, 0.4);
+   }
+
+dialog img {
+    cursor: pointer;
+}
+
+dialog h2 {
+    font-family: 'Concert One', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #684077;
+    text-align: center;
+    padding: 20px;
+}
+
+dialog p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+dialog button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 20px;
+    transition: transform 0.5s;
+}
+
+dialog button:hover i {
+    color: #6f5c51;
+}
+
+dialog button i {
+    font-size: 30px;
+    color: black;
+}
+
+.notebook {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+}
+
+.front, .back {
+    background-color: #e2dcd6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+    border-radius: 0 20px 20px 0;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid #684077;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content, .back-content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+.flipped .front, .flipped .back {
+    transform: rotateY(-180deg);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 20px;
+    transition: transform 0.5s;
+}
+
+button:hover i {
+    color: #8e9881;
+}
+
+i {
+    font-size: 30px;
+    color: white;
+}
+
+#front1 {
+    border-left: 40px solid #684077;
+}
+
+#front1 h1 {
+    padding-top: 100px;
+}
+
+#page1 {
+    z-index: 3;
+}
+
+#page2 {
+    z-index: 2;
+}
+
+#page3 {
+    z-index: 1;
+}

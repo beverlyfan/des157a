@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Picture Project</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/efd522aa11.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- PREV BUTTON -->
+    <button id="previous">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <!--     -->
+    <div id="notebook" class="notebook">
+        <!-- PAGE 1 -->
+        <div id="page1" class="paper">
+            <div class="front">
+                <div id="front1" class="front-content">
+                    <h1>Every Picture</h1>
+                    <p>Beverly's Adventure Journal!</p>
+                    <p><img src="images/denali.png" alt="denali" width="369" height="369" id="cover"></p>
+                    <p id="info">Click on the stamps to learn more!</p>
+                </div>
+            </div>
+            <div class="back">
+                <div id="back1" class="back-content">
+                    <h1>Arches National Park</h1>
+                    <p><img src="images/arches.png" alt="arches" width="266" height="265" id="arches"></p>
+                    <p>I visited Arches during the summer of 2016! It was a short hike Delicate Arch, which is the famed natural feature pictured in the background of the stamp. Some cool animals I spotted include mule deer, coyotes, desert cottontails, and jackrabbits!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 2 -->
+        <div id="page2" class="paper">
+            <div class="front">
+                <div id="front2" class="front-content">
+                    <h1>Grand Canyon National Park</h1>
+                    <p><img src="images/grandcanyonbookstore.png" alt="grandcanyonbookstore" width="410" height="400" id="grandcanyon"></p>
+                    <p>I visited Grand Canyon during the summer of 2016, and have visited this park about three times in total. I went camping here for the first time with my family, and got to see many viewpoints as well as animals.</p>
+                </div>
+            </div>
+            <div class="back">
+                <div id="back2" class="back-content">
+                    <h1>Denali National Park</h1>
+                    <p><img src="images/denalikennels.png" alt="denalikennels" width="349" height="354" id="denali"></p>
+                    <p>Denali National Park, which features the tallest mountain in North America Mount Denali, was the most recent National Park I visited this past summer. It is located in Alaska, and I got to see many cool animals such as caribou, brown bears, and moose.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 3 -->
+        <div id="page3" class="paper">
+            <div class="front">
+                <div id="front3" class="front-content">
+                    <h1>Yellowstone National Park</h1>
+                    <p><img src="images/yellowstone.png" alt="yellowstone" width="468" height="300" id="yellowstone"></p>
+                    <p>I visited Yellowstone National Park during the summer of 2017. The most memorable features here were the geysers, such as Old Faithful pictured in the stamp. I was able to see many animals such as elk, moose, bears, mountain goats and of course, bison!</p>
+                </div>
+            </div>
+            <div class="back">
+                <div id="back3" class="back-content">
+                    <h1>Dixie National Forest</h1>
+                    <p><img src="images/dixie.png" alt="dixie" width="248" height="177" id="dixie"></p>
+                    <p>I passed through Dixie National Forest during the summer of 2014, between the drive from Bryce Canyon National Park and Zion National Park. I went again in the summer of 2016, on the way to Arches and Grand Canyon National Park. This was one of the first memorable hikes I remember because of the red rock canyons.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPUP DIALOG BOXES -->    
+    <dialog id="archespopup">
+        <button id="close1">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Arches National Park</h2>
+        <p>Hover over the images for more information!</p>
+        <section id="imagecollage">
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+        </section>
+    </dialog>
+
+    <dialog id="grandcanyonpopup">
+        <button id="close2">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Grand Canyon National Park</h2>
+        <p>Hover over the images for more information!</p>
+        <section id="imagecollage">
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+        </section>
+    </dialog>
+
+    <dialog id="denalipopup">
+        <button id="close3">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Denali National Park</h2>
+        <p>Hover over the images for more information!</p>
+        <section id="imagecollage">
+            <article>
+                <img src="images/denali/denali1.jpg">
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/denali/denali2.jpg">
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/denali/denali3.jpg">
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/denali/denali4.jpg">
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+        </section>
+    </dialog>
+
+    <dialog id="yellowstonepopup">
+        <button id="close4">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Yellowstone National Park</h2>
+        <p>Hover over the images for more information!</p>
+        <section id="imagecollage">
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+        </section>
+    </dialog>
+
+    <dialog id="dixiepopup">
+        <button id="close5">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Dixie National Forest</h2>
+        <p>Hover over the images for more information!</p>
+        <section id="imagecollage">
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+            <article>
+                <img>
+                <div>
+                    <p>Text</p>
+                </div>
+            </article>
+        </section>
+    </dialog>
+
+    <!-- NEXT BUTTON -->
+    <button id="next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+</body>
+</html>
