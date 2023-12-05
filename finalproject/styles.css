@@ -9,9 +9,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: default;
     font-family: sans-serif;
-    background-color: #384628;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.3s linear;
 }
 
 h1 {
@@ -93,6 +96,7 @@ dialog {
     max-width: 800px;
     margin: auto;
     background-color: #e2dcd6;
+    position: relative
 }
 
 dialog::backdrop {
@@ -106,15 +110,20 @@ dialog img {
 dialog h2 {
     font-family: 'Concert One', sans-serif;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #684077;
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
 }
 
 dialog p {
-    margin: 20px;
     font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
 }
 
 dialog button {
@@ -123,6 +132,9 @@ dialog button {
     cursor: pointer;
     margin: 20px;
     transition: transform 0.5s;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 dialog button:hover i {
@@ -132,6 +144,15 @@ dialog button:hover i {
 dialog button i {
     font-size: 30px;
     color: black;
+}
+
+#imagecollage {
+    display: flex;
+    justify-content: center;
+}
+
+#imagecollage img {
+    margin: 10px;
 }
 
 .notebook {

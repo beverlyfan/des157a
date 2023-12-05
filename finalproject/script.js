@@ -124,4 +124,13 @@
         dixiepopup.close();
     });
 
+    /* CHANGE BG IMAGE */
+    document.getElementById('denali').addEventListener('mouseover', function() {
+        document.body.style.backgroundImage = "url('images/denali/denalibg.JPG')";
+    });
+     
+    document.getElementById('denali').addEventListener('mouseout', function() {
+        document.body.style.backgroundImage = "url('images/background.jpg')";
+    });
+
 })();
