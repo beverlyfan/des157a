@@ -93,7 +93,7 @@ p img:hover {
 
 dialog {
     border-radius: 20px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     background-color: #e2dcd6;
     position: relative
@@ -102,10 +102,6 @@ dialog {
 dialog::backdrop {
     background-color: rgb(0, 0, 0, 0.4);
    }
-
-dialog img {
-    cursor: pointer;
-}
 
 dialog h2 {
     font-family: 'Concert One', sans-serif;
@@ -116,7 +112,7 @@ dialog h2 {
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 dialog p {
@@ -147,12 +143,24 @@ dialog button i {
 }
 
 #imagecollage {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 #imagecollage img {
-    margin: 10px;
+    filter: grayscale(100%);
+    transition: filter .5s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+
+#imagecollage img:hover {
+    filter: grayscale(0%);
 }
 
 .notebook {
