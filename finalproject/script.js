@@ -125,11 +125,34 @@
     });
 
     /* CHANGE BG IMAGE */
+    document.getElementById('arches').addEventListener('mouseover', function() {
+        document.body.style.backgroundImage = "url('images/arches/archesbg.jpg')";
+    });
+    document.getElementById('arches').addEventListener('mouseout', function() {
+        document.body.style.backgroundImage = "url('images/background.jpg')";
+    });
     document.getElementById('denali').addEventListener('mouseover', function() {
         document.body.style.backgroundImage = "url('images/denali/denalibg.JPG')";
     });
-     
     document.getElementById('denali').addEventListener('mouseout', function() {
+        document.body.style.backgroundImage = "url('images/background.jpg')";
+    });
+    document.getElementById('yellowstone').addEventListener('mouseover', function() {
+        document.body.style.backgroundImage = "url('images/yellowstone/yellowstonebg.jpg')";
+    });
+    document.getElementById('yellowstone').addEventListener('mouseout', function() {
+        document.body.style.backgroundImage = "url('images/background.jpg')";
+    });
+    document.getElementById('grandcanyon').addEventListener('mouseover', function() {
+        document.body.style.backgroundImage = "url('images/grandcanyon/grandcanyonbg.jpg')";
+    });
+    document.getElementById('grandcanyon').addEventListener('mouseout', function() {
+        document.body.style.backgroundImage = "url('images/background.jpg')";
+    });
+    document.getElementById('dixie').addEventListener('mouseover', function() {
+        document.body.style.backgroundImage = "url('images/dixie/dixiebg.jpg')";
+    });
+    document.getElementById('dixie').addEventListener('mouseout', function() {
         document.body.style.backgroundImage = "url('images/background.jpg')";
     });
 

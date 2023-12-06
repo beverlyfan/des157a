@@ -14,7 +14,7 @@ body {
     background-image: url('images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    transition: background-image 0.3s linear;
+    transition: background-image 0.7s linear;
 }
 
 h1 {
@@ -217,7 +217,7 @@ button {
 }
 
 button:hover i {
-    color: #8e9881;
+    color: #684077;
 }
 
 i {
